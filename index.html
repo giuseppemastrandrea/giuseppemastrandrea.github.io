@@ -48,7 +48,10 @@
 
 
     /* hero */
-    .hero { padding: 72px 0 80px; }
+    .hero { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 48px 0; }
+    .hero .wrap { width: 100%; }
+    .lead a { color: var(--fg); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+    .lead a:hover { color: var(--accent); }
     .hero .wrap {
       display: grid; gap: 56px; align-items: center;
       grid-template-columns: 1.1fr 1fr;
@@ -93,7 +96,7 @@
     footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
 
     @media (max-width: 860px) {
-      .hero { padding: 40px 0 56px; }
+      .hero { padding: 32px 0 48px; }
       .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
       .photo { order: -1; aspect-ratio: 1 / 1; max-width: 420px; }
     }
@@ -116,7 +119,7 @@
         <div>
           <p class="eyebrow">Ingegnere · Docente · Formatore</p>
           <h1>Ciao, sono Giuseppe Mastrandrea.</h1>
-          <p class="lead">Insegno informatica, accompagno le scuole nella trasformazione digitale e faccio formazione sull'intelligenza artificiale e l'AI generativa.</p>
+          <p class="lead">Insegno informatica, accompagno le scuole nella trasformazione digitale e faccio formazione per <a href="https://datamasters.it/" target="_blank" rel="noopener">Data Masters</a> sull'intelligenza artificiale e l'AI generativa.</p>
           <div class="cta">
             <a class="btn primary" href="#contatti">Contattami</a>
           </div>
